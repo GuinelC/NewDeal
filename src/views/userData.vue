@@ -24,7 +24,7 @@ export default {
         }
     },
     created() {
-        axios.get('http://jsonplaceholder.typicode.com/users/' + this.$route.params.id)
+        axios.get('https://jsonplaceholder.typicode.com/users/' + this.$route.params.id)
             .then((response) => {
                 this.user = response.data
                 console.log(response.data);
@@ -45,17 +45,24 @@ export default {
     margin-top: 20px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: rgb(232, 233, 233);
 }
 
 .titleCard {
-    background-color: grey;
+    background-color: rgba(50, 50, 50, 0.891);
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 .titleCard h1 {
-    color: white;
+    background-image: linear-gradient(90.52deg, #84CABF 0%, #7DA5D8 34.84%, #E7454B 67.09%, #FAB931 99.85%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 @media (max-width: 500px) {
