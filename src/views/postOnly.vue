@@ -27,7 +27,7 @@ export default {
         }
     },
     created() {
-        axios.get('https ://jsonplaceholder.typicode.com/posts/' + this.$route.params.id)
+        axios.get('https://jsonplaceholder.typicode.com/posts/' + this.$route.params.id)
             .then((response) => {
                 this.post = response.data
                 console.log(response.data);
